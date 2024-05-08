@@ -22,6 +22,7 @@ import {
   cogOutline,
   logOutOutline,
 } from 'ionicons/icons';
+import './Menu.css';
 
 const Menu: React.FC = () => {
   const paths = [
@@ -31,21 +32,21 @@ const Menu: React.FC = () => {
 
   return (
     <IonPage>
-      <IonSplitPane contentId="main" when="xl">
+      <IonSplitPane contentId="main" when="lg">
         <IonMenu contentId="main">
           <IonHeader>
             <IonToolbar color={'primary'}>
               <IonTitle>Menu</IonTitle>
             </IonToolbar>
           </IonHeader>
-          <IonContent>
+          <IonContent scrollY={false}>
             {paths.map((item, index) => (
               <IonMenuToggle key={index} autoHide={false}>
                 <IonItem
                   color=""
                   routerLink={item.path}
                   routerDirection="none"
-                  className="text-primary">
+                  className="">
                   <IonIcon
                     icon={item.icon}
                     slot="start"

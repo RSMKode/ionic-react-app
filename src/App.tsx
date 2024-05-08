@@ -38,7 +38,9 @@ import './theme/variables.css';
 import './styles.css';
 import Menu from './pages/Menu';
 
-setupIonicReact();
+setupIonicReact({
+  // mode: 'ios',
+});
 
 const App: React.FC = () => (
   <IonApp>

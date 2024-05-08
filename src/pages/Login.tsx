@@ -25,7 +25,7 @@ import {
 import React, { useEffect } from 'react';
 import { Preferences } from '@capacitor/preferences';
 
-import AngularLogo from '../assets/angular-logo.svg';
+import AngularLogo from '../assets/angular-logo-color.svg';
 import Intro from '../components/Intro';
 
 const INTRO_KEY = 'intro_seen';
@@ -75,7 +75,7 @@ const Login: React.FC = () => {
               {/* <IonButtons slot="start">
             <IonBackButton defaultHref="/" />
           </IonButtons> */}
-              <IonTitle>Login</IonTitle>
+              <IonTitle>Logina</IonTitle>
             </IonToolbar>
           </IonHeader>
           <IonContent scrollY={false}>
@@ -89,6 +89,7 @@ const Login: React.FC = () => {
                 <IonCardContent>
                   <form onSubmit={doLogin} className="flex flex-col gap-2 item">
                     <IonInput
+                      mode="md"
                       label="Email"
                       type="email"
                       placeholder="example@google.com"
@@ -96,6 +97,7 @@ const Login: React.FC = () => {
                       fill="outline"
                     />
                     <IonInput
+                      mode="md"
                       label="Password"
                       type="password"
                       placeholder="example@google.com"

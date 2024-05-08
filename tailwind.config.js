@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: 'rgb(var(--ion-color-primary-rgb) / <alpha-value>)',
-        secondary: 'rgb(var(--ion-color-secondary-rgb) / <alpha-value>)',
+        primary: 'rgb(var(--ion-color-primary-tw-rgb) / <alpha-value>)',
+        secondary: 'rgb(var(--ion-color-secondary-tw-rgb) / <alpha-value>)',
         // primary: 'var(--ion-color-primary)',
       },
 

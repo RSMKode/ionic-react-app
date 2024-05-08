@@ -7,3 +7,9 @@
   /* padding: 0; */
   box-sizing: border-box;
 }
+
+ion-input {
+  .label-text-wrapper {
+    color: var(--ion-color-primary);
+  }
+}
